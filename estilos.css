@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+}
+table {
+    width: 680px;
+    margin: 0 auto;             /* centrada en la página */
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+}
+/* Primera columna */
+th:first-child,
+td.portada {
+    background-color: lemonchiffon;
+}
+
+/* Segunda columna */
+th.info,
+td.datos {
+    background-color: darkred;
+    color: white;
+}
+
+/* Primera fila centrada */
+thead th {
+    text-align: center;
+}   
+
+th.info {
+   font-style: italic;
+   font-size: 25px;
+}
+
+/* Imágenes*/
+td.portada {
+    text-align: right;
+    vertical-align: middle;
+}
+
+td.portada img {
+    width: 200px;
+    height: 300px;
+    border: 0;
+}
+
+/* Listas */
+ol.romano {
+    list-style-type: lower-roman;
+}
+
+ol.letras {
+    list-style-type: lower-alpha;
+    font-weight: normal;
+}
+
+ol.personajes {
+    list-style-type: decimal;
+    font-decoration: underline;
+}
+
+/* Pie de tabla*/
+tfoot td {
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+}
